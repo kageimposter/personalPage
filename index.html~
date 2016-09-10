@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+<title>A Basic Site</title>
+<meta name="description" content="A Basic Site">
+<meta name="author" content="guy">
+<link rel="stylesheet" type="text/css" href="./Interactive Magical Realm CYOA_files/style.css">
+
+
+</head>
+
+<body
+style="background-color:grey;">
+<h1 title="status of site" style="color:white;" onclick="slidePanel(&#39;intro&#39;)">"Under Construction"</h1>
+
+<a style="font-family:courier; color:red; font-size:150%;text-align:center;" href=rem.html>Link</a>
+
+<a title='needs a "login"' style="font-family:courier; color:red; font-size:150%;text-align:center;" href="vip.html">VIP</a>
+<a href="redirect.html"></a>
+<br>
+<i style="font-family:courier; color:white; font-size:290%; text-align:center;"> Make America great again!</i>
+
+<br>
+
+<img style="image-align:center;"
+src="Prump.png"
+alt="fuckoff.txt"
+width="630"
+height="350">
+	<script src="js.scripts.js"></script>
+</body>
+</html>
