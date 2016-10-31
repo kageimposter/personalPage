@@ -7,3 +7,58 @@
 body{
     background-image: url(/uselessImg/ONI_Seal_1.png);
 }
+/* navigation bar css*/
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000001;
+    
+}
+/* lines elements up */
+ul.navbar li {float: left; }
+
+/*background and format of bar*/
+ul.navbar li a{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px, 14px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+/* changes the color of the links when you mouse over them*/
+ul.navbar li a:hover {background-color: gray;}
+
+/* to hide the links in the little icon*/
+ul.navbar li.icon {display: none;}
+
+/* this is to make sure the nav bar will change to the icon when the screen is too small-- it will show the first child but not anything else and only the icon, thats why it is named icon instead of the rest of the list items*/
+@media screen and (max-width:680px) {
+    ul.navbar li:not(:first-child) {display: none;}
+    ul.navbar li.icon{
+        float: right;
+        display: inline-block;
+    }
+}
+/* this is just extra for when small screens click on it*/
+@media screen and (max-width:680px){
+    ul.navbar.responsive{ position: relative;}
+    ul.navbar.responsive li.icon{
+        position:absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.navbar.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.navbar.responsive li a{
+        display: block;
+        text-align: left;
+    }
+}
+
