@@ -10,7 +10,7 @@
         <meta name="author" content="guy">
 
 <!-- link to the style css-->
-        <link rel="stylesheet" href="./CSSscripts/styles.css">
+        <link rel="stylesheet" href="CSSscripts/global.css">
 
 
 
@@ -19,20 +19,10 @@
 
 <!-- main page-->
     <body>
-        <div class="board-list">
-            <board-list-top>
-                <div class="board-contain">
-                    <a class="author-logo" target="_blank">
-                    
-                    </a>
-                </div>
-            </board-list-top>
-        </div>
-        
         <!-- this is the navagation bar for the top of the site needs css to look like actual bar-->
         <ul class="navbar" id="topBarNav">
             <!-- the bar is just a set of links to the other pages-->
-            <li><a href="index.html">Home</a></li>
+            <li><a class="currentPage" href="index.html">Home</a></li>
             <li><a href="index.html">Recent</a></li>
             <li><a href="index.html">BoardList</a></li>
             <!-- should create the icon for the bar-->
@@ -65,14 +55,16 @@
 <!-- image at bottom-->
         <div class="credits">
             
-                <a href="https://en.wikipedia.org/wiki/HTML5"><img style="image-align:left;" src="uselessImg/html5credit" width="50px" height="50px"></a> <p>this was wrttien with<br> html 5</p>
+                <a  href="https://en.wikipedia.org/wiki/HTML5"><img style="image-align:left;" src="uselessImg/html5credit" width="50px" height="50px"></a> <p>this was wrttien with<br> html 5</p>
             
            
-                <a href="http://www.w3schools.com/css/css_navbar.asp"><img style="image-align:left;"
+                <a  href="http://www.w3schools.com/css/css_navbar.asp"><img style="image-align:left;"
                 src="uselessImg/w3schools.jpeg" ></a>
            <p>     a great resource was<br> W3schools.com          
             </p>
-            
+                <a  href="https://github.com/tslocum/TinyIB"><img
+                style="image-align:center;" src="uselessImg/*" alt="github">
+                    <p > this guy was an awesome example<br> check out his projects</p></a>
             
         </div>
     </body>

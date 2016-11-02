@@ -1,16 +1,23 @@
 .content{
-    background-color: crimson;
-    color: white;
+    background-color: aqua;
+    color: black;
     font-family:fantasy;
     text-align: center;
 }
-body{
-    background-image: url(/uselessImg/ONI_Seal_1.png);
+/*background image/ the color of the site*/
+html, body{
+    font-size: 12pt;
+    background-color:#EEF2FF;
+    color: #000000;
+    padding: 8px;
 }
+/* this will hide the unsightly undeline and blue text that happens with a link*/
+a { text-decoration: none;}
+
 /* navigation bar css*/
 ul.navbar {
     list-style-type: none;
-    margin: 0;
+    margin: 10;
     padding: 0;
     overflow: hidden;
     background-color: #000001;
@@ -24,14 +31,25 @@ ul.navbar li a{
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px, 14px;
     text-decoration: none;
     transition: 0.4s;
     font-size: 17px;
+    width: 160px;
+    margin: 0 0 0 auto;
+    
 }
 
 /* changes the color of the links when you mouse over them*/
-ul.navbar li a:hover {background-color: gray;}
+ul.navbar li a:hover {background-color: #ffffff;
+                        color: black;}
+
+/* this will color the page you are currently on as marked by "currentPage" */
+ul.navbar li a.currentPage {
+    background-color:aqua;
+    color:black;
+}
+
+
 
 /* to hide the links in the little icon*/
 ul.navbar li.icon {display: none;}
@@ -61,4 +79,20 @@ ul.navbar li.icon {display: none;}
         text-align: left;
     }
 }
+
+/*this is the section influenced/adapted from the examples */
+form { margin-bottom:0;}
+
+.posting {text-align: center;}
+
+.posting table { 
+    margin: 0 auto;
+	text-align: left;
+}
+
+.postblock {
+    vertical-align: top;
+	padding: 3px;
+}
+
 
