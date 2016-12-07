@@ -22,16 +22,26 @@ if (get_magic_quotes_runtime()) {
 }
 
 */
+//This IS FOR UPLOADING TO MYSQL
+$server = "localhost"; 
+$user = "browsePage";
+$pass = "jackTheRipper";
+$dbname = "fileServer";
 
-$con = mysql_connect(localhost,browsePage,jackTheRipper);
-  mysql_select_db(fileServer,$con);
+//connect to the mysql server
+$con = mysql_connect($server,$user,$pass, $dbname);
+//if it fails
+if($con->connect_error){
+    die("Connection fail, reason: " . $con->connect_error);
+}
+//command for mysql
+$command
 
-
-$table = "ENTRIES";
+$table = "IMAGES";
 mysql_query = ("CREATE TABLE IF NOT EXISTS '$table' ( 'ID' INT NOT NULL AUTO_INCREMENT . PRIMARY KEY ('id'))");
-mysql_query = ("ALTER TABLE '$table' ADD 'TITLE' TEXT  NOT NULL");
-mysql_query = ("ALTER TABLE '$table' ADD 'SUMMARY' TEXT  NOT NULL");
-mysql_query = ("ALTER TABLE '$table' ADD 'CONTENT' TEXT  NOT NULL");
+mysql_query = ("ALTER TABLE '$table' ADD 'IMAGE' IMAGE BLOB");
+mysql_query = ("ALTER TABLE '$table' ADD 'NAME' varchar(64)");
+//mysql_query = ("ALTER TABLE '$table' ADD 'CONTENT' TEXT  NOT NULL");
 
 
 ?>

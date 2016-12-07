@@ -1,4 +1,17 @@
 <?php
+
+
+
+
+
+$server = "localhost"; 
+$user = "browsePage";
+$pass = "jackTheRipper";
+$dbname = "fileServer";
+
+  
+// THIS UPLOAADS AN IMAGE TO A FILE WHERE THE INDEX IS HOSTED
+
     $target_dir = "Uploads/";
     $target_path = $target_dir . basename($_FILES["fileUpload"]["name"]);
     $checkIfGood = 1;
@@ -21,7 +34,7 @@
     }
 
     //Check the file size for the upload
-    if($_FILES["fileUpload"]["size"]> 500000){
+    if($_FILES["fileUpload"]["size"]> 200000){
         echo "File too large.";
         $checkIfGood = 0;
     }
@@ -45,4 +58,7 @@
             echo "There was an error."
         }    
     }
+    
+
+
 ?>

@@ -26,10 +26,11 @@
     echo $a, "<br>";
     $a ++;}
     
+    //These are constructors
     canister();
     repeat();
     repeat();
-    echo $t + $hold;
+    echo $t . $hold;
     
     ?>
     </body>
