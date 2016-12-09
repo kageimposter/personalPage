@@ -17,6 +17,7 @@ $dbname = "fileServer";
     $checkIfGood = 1;
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     //verify that its actually an image
+    
     if(isset($_POST["submit"])) {
         $check = getimagesize($_FILES["fileUpload"]["flush_name"]);
         if($check !== false){
@@ -58,7 +59,7 @@ $dbname = "fileServer";
             echo "There was an error."
         }    
     }
+    include index.html;
     
-
 
 ?>
