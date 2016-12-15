@@ -14,48 +14,53 @@ html, body{
 /* this will hide the unsightly undeline and blue text that happens with a link*/
 a { text-decoration: none;}
 
-/* get the logo to be side by side with the navbar*/
-a.logo {
-    float:left;
-  
-}
-
-/*.flexcontainer {
+/* this will make a flex out of the navbar */
+.flexcontainer {
   display: flex;
-  align-items: center;
-}*/
-
+  flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+}
 
 /* navigation bar css*/
+
 ul.navbar {
-    list-style-type: none;
-    margin: 10;
-    padding: 0;
+    position: fixed;
+    left:0;
+    top: 0;
+    width:100%;
+    height: 50px;
+/*    list-style-type: none; */
+    margin: auto;
     overflow: hidden;
     background-color: #000001;
-    
-}
+    flex: 1;
+} 
 /* lines elements up */
-ul.navbar li {float: left; }
+
+  ul.navbar li {float: left; }
 
 /*background and format of bar*/
+
 ul.navbar li a{
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
     transition: 0.4s;
-    font-size: 17px;
+    font-size: 20px;
     width: 160px;
     margin: 0 0 0 auto;
-    
+    height: 25px;
 }
 
 /* changes the color of the links when you mouse over them*/
+
 ul.navbar li a:hover {background-color: #ffffff;
                         color: black;}
 
 /* this will color the page you are currently on as marked by "currentPage" */
+
 ul.navbar li a.currentPage {
     background-color:aqua;
     color:black;
@@ -73,9 +78,9 @@ ul.navbar li.icon {display: none;}
         float: right;
         display: inline-block;
     }
- /* .flexcontainer {
+  .flexcontainer {
     display: block;
-  }*/
+  }
 }
 }
 /* this is just extra for when small screens click on it*/
