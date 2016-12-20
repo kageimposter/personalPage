@@ -3,6 +3,7 @@
     color: black;
     font-family:fantasy;
     text-align: center;
+    table-layout: auto;
 }
 /*background image/ the color of the site*/
 html, body{
