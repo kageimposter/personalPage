@@ -3,13 +3,6 @@
 
 
 
-
-$server = "localhost"; 
-$user = "browsePage";
-$pass = "jackTheRipper";
-$dbname = "fileServer";
-
-  
 // THIS UPLOAADS AN IMAGE TO A FILE WHERE THE INDEX IS HOSTED
 
     $target_dir = "Uploads/";
@@ -35,7 +28,7 @@ $dbname = "fileServer";
     }
 
     //Check the file size for the upload
-    if($_FILES["fileUpload"]["size"]> 200000){
+    if($_FILES["fileUpload"]["size"]> 2000000){
         echo "File too large.";
         $checkIfGood = 0;
     }
