@@ -4,7 +4,34 @@
 
 
 // THIS UPLOAADS AN IMAGE TO A FILE WHERE THE INDEX IS HOSTED
-
+//https://github.com/Rundiz/upload/blob/version2/Rundiz/Upload/Upload.php#L40
+class upload{
+    //this is going to call everything
+    
+    //this will look at everything and check if it meets the file type requirements
+    public $set_file_types;
+    
+    //this should set a max size
+    public $max_size;
+    
+    //this construct should reset the name to a new one when uploaded, dont use for multi uploads
+    public $set_new_file_name;
+    
+    //bool to overwrite upload, true for overwrite
+    public $take_over = false;
+    
+    //safe names
+    public $safe_names = true;
+    
+    //sec scan
+    public $sec_scan = false;
+    
+    //this skipps error files in multi upload if error, on true delete all
+    public $multiple_upload_fail =true;
+    
+}
+    
+/*
     $target_dir = "Uploads/";
     $target_path = $target_dir . basename($_FILES["fileUpload"]["name"]);
     $checkIfGood = 1;
@@ -33,6 +60,7 @@
         $checkIfGood = 0;
     }
     
+    */
     //Allowing only certain types of files
     if($imageFileType != "jpg" && $imageFileType != "mpeg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif"
       && $imageFileType != "webm"){
@@ -53,6 +81,11 @@
         }    
     }
     include index.html;
-    
+  */  
+
+
+
+
+
 
 ?>
