@@ -6,8 +6,10 @@
 <!-- info stuff here for the rest of the page-->
 
         <title>PolCabinet</title>
-        <meta name="description" content="An Image Board">
-        <meta name="author" content="Polli">
+        <meta name="description" content="A personal page"/>
+        <meta name="author" content="Polli"/>
+        <meta name="keywords" content="working page, mess with, school page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <!-- link to the style css-->
         <link rel="stylesheet" href="CSSscripts/global.css">
@@ -17,10 +19,7 @@
     <!-- on load call the php file that will set up the mysql server-->    
         <!-- display it through an inframe or use the body onpageshow-->
             <!-- or we could do onload="myScript" --> 
-    <body onpageshow="startpage.php" >
-        
-
-        
+    <body class="background">       
         <!-- this is the navagation bar for the top of the site needs css to look like actual bar-->
  <div class="flexcontainer">
         <ul class="navbar" id="topBarNav">
@@ -31,9 +30,13 @@
                 <a class="logo" href="index.html"><img src="uselessImg/logo.png" width="50px" height="50px"></a>
                 </div>
             </li>
-            <li><a class="currentPage" class="navitem" href="index.html">Home</a></li>
-            <li><a class="navitem" href="page3.html">Recent</a></li>
-            <li><a class="navitem" href="page2.html">BoardList</a></li>
+            <li><a class="currentPage" class="navitem" href="index.html">Home</a>
+            </li>
+            <li><a class="navitem" href="page3.html">Recent</a>
+            </li>
+            <li><a class="navitem" href="page2.html">BoardList</a> </li>
+            <li><a class="navitem" href="testpage.html">testing</a></li>
+            
             <!-- should create the icon for the bar-->
           
             <li class="icon" class="navitem">
@@ -45,25 +48,33 @@
 
         
         <!---this is the spot for the banner of the site-->
-        <img>
+        
+        <div class="banner">
+            <a class="banner" href="index.html"><img src="uselessImg/bannerImg.jpg"></a>
+        </div>
+        
         
         
         
 <!--title-->
-        <h1 title="status of site">"PoliCabinet"</h1>
-
+        <h1>"PoliCabinet"</h1>
+        
 
 <!-- main stuff here-->
 	   
-        
-        
-        
+        <div class="POST">
+            <article>
+                <h2 class="PostTittle">
+                </h2>
+                <img>
+                <p class="mainText">
+                </p>
+                <p class="postTags">
+                </p>
+            </article>
+        </div>
         
     <!--This is the site news -->    
-
-            
-
-	<!-- Article is a tag for a seperate and independent content-->
         <div class="siteNews">		
 		  <article>
             <header>
@@ -73,35 +84,13 @@
             </article>
         </div>
 
-	
+	<div class="recent">
+        
+        
+        
+        
+    </div>
 
-
-	<!-- audio tag for putting in audio-->
-	<audio controls>
-		<source src="*.*" type="audio/mpeg" alt="this doesn't work">
-	</audio>
-
-	<audio controls>
-<source src="*.*"type="audio/mpeg" alt="this doesn't work">	
-
-    </audio>
-
-
-
-
-
-
-
-<!-- example for embeding a swf file
-
-	<object type="application/x-shockwave-flash"User Name 
-  		data="your-flash-file.swf" 
-  		width="0" height="0">
-  		<param name="movie" value="your-flash-file.swf" />
-  		<param name="quality" value="high"/>
-	</object>
-
--->				
 				<!-- This is a basic search box form
 
 			<div id="searchBox" role="search">

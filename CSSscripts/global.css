@@ -1,19 +1,24 @@
-.content{
-    background-color: aqua;
-    color: black;
+.recent{
+    background-color: grey;
+    text-decoration-color: black;
     font-family:fantasy;
     text-align: center;
     table-layout: auto;
 }
 /*background image/ the color of the site*/
-html, body{
-    font-size: 12pt;
+.background{
+/*    font-size: 12pt;
     background-color:#EEF2FF;
     color: #000000;
-    padding: 8px;
+    padding: 8px;  */
+    background: url(../uselessImg/backgr.jpg)top center no-repeat;
 }
 /* this will hide the unsightly undeline and blue text that happens with a link*/
 a { text-decoration: none;}
+
+a:hover{
+    text-decoration: underline;
+}
 
 /* this will make a flex out of the navbar */
 .flexcontainer {
