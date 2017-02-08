@@ -5,16 +5,21 @@
 	   <meta charset="UTF-8">
 <!-- info stuff here for the rest of the page-->
 
-        <title>PolCabinet</title>
+        <title>Portfolio</title>
         <meta name="description" content="A personal page"/>
-        <meta name="author" content="Polli"/>
+        <meta name="author" content="Self"/>
         <meta name="keywords" content="working page, mess with, school page"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <!-- link to the style css-->
         <link rel="stylesheet" href="CSSscripts/global.css">
+<!-- script-->
+        <script src="js/Snap.svg-0.5.1/dist/snap.svg-min.js"></script>
     </head>
 
+<!---=============================CONTENT==============-->    
+    
+    
 <!-- main page-->
     <!-- on load call the php file that will set up the mysql server-->    
         <!-- display it through an inframe or use the body onpageshow-->
@@ -52,28 +57,8 @@
         <div class="banner">
             <a class="banner" href="index.html"><img src="uselessImg/bannerImg.jpg"></a>
         </div>
-        
-        
-        
-        
 <!--title-->
-        <h1>"PoliCabinet"</h1>
-        
-
-<!-- main stuff here-->
-	   
-        <div class="POST">
-            <article>
-                <h2 class="PostTittle">
-                </h2>
-                <img>
-                <p class="mainText">
-                </p>
-                <p class="postTags">
-                </p>
-            </article>
-        </div>
-        
+        <h1>"Portfolio"</h1>
     <!--This is the site news -->    
         <div class="siteNews">		
 		  <article>
@@ -83,101 +68,32 @@
               </header>
             </article>
         </div>
-
 	<div class="recent">
         
-        
-        
-        
     </div>
-
-				<!-- This is a basic search box form
-
-			<div id="searchBox" role="search">
-				<form action="*" method="*">
-					<input name="query" id="searchFld" type="text">
-					<input value="Search" name="submit" id="searchBtn" type="submit">
-					<input name="search" value="1" type="hidden">
-				</form>
-
-					-->
-
-<!--	This is an example of embeding flash
-		
-	<script type="text/javascript">putFlash6(620,440,'images/chess.swf','','#FFFFFF');</script>
-	<embed src="*" quality="high" bgcolor="#FFFFFF" menu="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"
-
-		<object type="application/x-shockwave-flash" data="images/chess.swf" width="620" height="440" align="middle" >
-    <param name="allowScriptAccess" value="sameDomain" />
-    <param name="allowFullScreen" value="true" />
-    <param name="movie" value="images/chess.swf" />
-    <param name="quality" value="high" />
-    <param name="bgcolor" value="#FFFFFF" />
-		</object>
--->
-
-<!-- This is a forum addition example-->
-
-<div class="input-wrap name">
-    <label for="textinput">User:</label>
-    <input type="text" name="usernameinput" id="usernameinput" value="User Name" />
-</div>
-<div class="input-wrap checkbox">
-    <label>Extra:</label>
-    <div class="option-wrap">
-     <label for="checkbox1">Anon:</label>
-    <input type="radio" name="checkbox1" id="checkbox1" value="checkbox1" />
-    </div>
-    <div class="option-wrap">
-     <label for="checkbox2">Named:</label>
-    <input type="radio" name="checkbox2" id="checkbox2" value="checkbox2" />
-    </div>
-</div>
-
-
-
-	<!--image with paragraph and link on it-->
-
-
-
-        
-        
-        
-        <!-- block of rule list-->
-        
-        
-        <!-- Current mods / admins of site-->
-        
-                
-        
-        
-        
-<!-- upload forum -->
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-    Image:
-    <input type="file" name="fileUpload" id="fileUpload">
-    <input type="submit" value="Image Upload" name="Submit">    
-    </form>            
-        
 <!--credit Link trash-->        
-        
-      
-    
-
-        <div class="credits">
-            
+<!--==================FOOTER===========-->    
+        <footer>
+            <div class="credits">    
                 <a  href="https://en.wikipedia.org/wiki/HTML5"><img style="image-align:left;" src="uselessImg/html5credit" width="50px" height="50px"></a> <p>this was wrttien with<br> html 5</p>
-            
-           
-                <a  href="http://www.w3schools.com/css/css_navbar.asp"><img style="image-align:left;"
+                    <a  href="http://www.w3schools.com/css/css_navbar.asp"><img style="image-align:left;"
                 src="uselessImg/w3schools.jpeg" ></a>
-           <p>     a great resource was<br> W3schools.com          
-            </p>
+                <p>     a great resource was<br> W3schools.com          
+                </p>
                 <a  href="https://github.com/tslocum/TinyIB"><img
                 style="image-align:center;" src="uselessImg/*" alt="github">
                     <p > this guy was an awesome example<br> check out his projects</p></a>
             
-        </div>
-    </body>
+            </div>
+        </footer>
+        <script>
+        var x =50;
+        var y =50;
+        var z =40;
+        var s= Snap();
+        var backC = s.circle(x,y,z);
+        var triarch = s.group(s.triangle(x,y,z));
+        </script>        
+</body>
 
 </html>

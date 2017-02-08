@@ -7,11 +7,19 @@
 }
 /*background image/ the color of the site*/
 body {
-/*    font-size: 12pt;
-    background-color:#EEF2FF;
+   font-size: 12pt;
+/*     background-color:#EEF2FF;
     color: #000000;
-    padding: 8px;  */
+    padding: 8px; */
     background: url(../uselessImg/backgr.jpg)top center no-repeat;
+    text-align: center;
+}
+
+h1{
+    text-decoration: grey;
+    margin: auto;
+    padding: inherit;
+    
 }
 /* this will hide the unsightly undeline and blue text that happens with a link*/
 a { text-decoration: none;}
@@ -107,20 +115,6 @@ ul.navbar li.icon {display: none;}
     }
 }
 
-/*this is the section influenced/adapted from the examples */
-form { margin-bottom:0;}
-
-.posting {text-align: center;}
-
-.posting table { 
-    margin: 0 auto;
-	text-align: left;
-}
-
-.postblock {
-    vertical-align: top;
-	padding: 3px;
-}
 
 .thumbnail {
 	border: none;
@@ -137,38 +131,6 @@ form { margin-bottom:0;}
 	padding: 1em 0.5em 1em 0.5em;
 }
 
-.textpost {
-	margin: 1em 25px;
-}
-
-.reply .textpost {
-	margin-bottom: 5px;
-}
-
-.reflink a {
-	color: inherit;
-	text-decoration: none;
-}
-
-.reflink a:hover {
-	color: #800000;
-}
-
-.reply .filesize {
-	margin-left: 20px;
-}
-
-/*.userdelete {
-	float: right;
-	text-align: center;
-	white-space: nowrap;
-}*/
-
-
-
-.modpost {
-	color: #FF0000;
-}
 
 .managebutton {
 	font-size: 15px;
@@ -181,24 +143,5 @@ form { margin-bottom:0;}
 	text-align: center;
 }
 
-.rulestopboard {
-	
-}
 
-.rules ul {
-	
-}
-
-
-.login {
-
-}
-
-.adminbar {
-
-}
-
-.adminbar a:link, .adminbar a:visited, .adminbar a:active, .adminbar a:hover {
-	text-decoration: none;
-}
 
